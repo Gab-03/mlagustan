@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    height: 100%; 
+}
+
+/* Basic styling for the header */
+header {
+    background-color: #fff; /* Dark background color */
+    padding: 10px 0; /* Add some padding to the top and bottom */
+    color: #333;
+    border-bottom: 1px solid #ccc; 
+}
+
+header nav ul {
+    display: flex; /* Aligns the list items horizontally */
+    justify-content: left; /* Centers the items */
+    list-style: none; /* Removes bullet points */
+    margin: 0; /* Resets margin */
+    padding: 0; /* Resets padding */
+    font-weight: bold;
+    
+}
+
+header nav ul li {
+    margin: 0 20px; /* Adds space between each item */
+    padding: 1.5rem;
+    padding-left: 5rem;
+    color: #232222;
+}
+
+header nav ul li a {
+    text-decoration: none; /* Removes underline */
+    color: rgb(154, 149, 149);
+    font-size: 1.5rem; /* Larger font size */
+}
+
+header nav ul li a:hover {
+    color: #484744; /* Change color when hovering */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    max-width: 1200px;
+}
+
+.sidebar {
+    width: 27%;
+    background-color: #fff;
+    padding: 20px;
+    color: #4d4b4b;
+    border-radius: 10px;
+    text-align: center;
+    padding-left: 3.5rem;
+}
+
+.profile-circle {
+    width: 170px; /* Adjust the size as needed */
+    height: 170px; /* Adjust the size as needed */
+    border-radius: 50%; /* Makes it a circle */
+    border: 1px solid #f3eded; /* Outer border color and thickness */
+    display: flex; /* Center the image inside */
+    align-items: center; /* Vertically center the image */
+    justify-content: center; /* Horizontally center the image */
+    overflow: hidden; /* Ensures the image does not overflow the circle */
+    margin-bottom: 20px; /* Spacing below the circle */
+}
+
+.profile-img {
+    width: 153px; /* Size of the profile image */
+    height: 153px; /* Size of the profile image */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the area */
+    object-position: center top; /* Adjusts image position */
+}
+.sidebar h2 {
+    margin-bottom: 10px;
+}
+
+.sidebar .contact-info {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.sidebar .contact-info li {
+    margin-bottom: 10px;
+    justify-content: left;
+    color: #4d4b4b;
+    text-align: left;
+}
+
+.profile-details {
+    text-align: left; /* Aligns text to the left */
+    margin-left: 0px; /* Optional: Adds some space from the left */
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.content {
+    width: 70%;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #fff;
+    color: #4d4b4b;
+    font-size: 21px;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #484646;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar, .content {
+        width: 100%;
+        margin: 0;
+    }
+}
